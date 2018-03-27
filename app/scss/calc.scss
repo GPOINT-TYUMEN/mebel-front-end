@@ -1,0 +1,15 @@
+@import "../libs/functions.scss";
+@import "../fonts/fonts.scss";
+//> OVERALL
+@import "overall/index";
+//< OVERALL  
+
+
+//> PLUGINS
+@import "../templates/site/plugins/scroll-1/scss/plugin.scss";
+@import "../templates/site/widgets/modal/scss/widget.scss";
+//> PLUGINS
+@import "../templates/site/modules/nav-fixed-left/scss/module.scss";
+@import "../templates/site/modules/calc/scss/module.scss";
+
+

@@ -1,0 +1,18 @@
+$CouriBold: 'CourierNewPS-BoldMT';
+$Couri: 'CourierNewPSMT';
+$Courireg: 'CourierNew';
+$GilroyBold: 'Gilroy-Bold';
+$Gilroy: 'Gilroy-Regular';
+$GilroySemiBold: 'Gilroy-Semibold';
+$CouriItalicBold: 'CourierNewBoldItalic'; 
+
+@include fonts($CouriBold, 'couri/');
+@include fonts($Couri, 'couri/');
+@include fonts($CouriItalicBold, 'couri/');
+@include fonts($Courireg, 'couri/');
+
+@include fonts($GilroyBold, 'gilroy/');
+@include fonts($Gilroy, 'gilroy/');
+@include fonts($GilroySemiBold, 'Gilroy-Semibold/');
+
+

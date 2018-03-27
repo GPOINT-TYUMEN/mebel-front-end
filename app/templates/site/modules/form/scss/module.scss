@@ -1,0 +1,644 @@
+.left-body {
+	width: 50%;
+
+	.left-nav {
+		position: fixed;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 50px;
+		border-right: 2px solid #757575;
+	}
+
+	.social {
+		position: absolute;
+		bottom: 30px;
+		left: 30px;
+		background-color: #FFF;
+		text-align: center;
+		padding: 20px 0;
+
+		a {
+			transition: 0.4s;
+			display: block;
+			text-decoration: none !important;
+		}
+
+		a:not(:first-child) {
+			margin-top: 25px;
+		}
+
+		i {
+			transition: 0.4s;
+			color: #3a3a3a;
+			font-size: 35px;
+		}
+
+		a:hover {	
+			transform: scale(0.9);
+			i {
+				color: #9c9c9c;
+			}
+		}	
+	}
+
+
+	.top-nav {
+		margin-top: 45px;
+		display: inline-block;
+		width: 100%;
+
+		.logo {
+			float: left;
+		}
+
+		.nav {
+			float: left;
+			margin-left: 52px;
+			margin-top: 20px;
+			cursor: pointer;
+		}
+
+		nav:hover {
+			transition: 0.4s;
+			opacity: 0.7;
+		}
+
+		.contact {
+			float: left;
+			margin-left: 30px;
+			margin-top: 20px;
+			animation-iteration-count: infinite;
+			animation-direction: alternate;
+			animation-duration: 1.5s;
+			animation-name: slidein-contact;
+			a {
+				font-family: $CouriBold;
+				font-size: 16px;
+				color: #3a3a3a;
+				text-decoration: none !important;
+			}
+		}
+
+		.contact.active {
+			transform: scale(1);
+		}
+
+
+		@keyframes slidein-contact {
+		  from {
+			transform: scale(0.9);
+		  }
+
+		  to {
+			transform: scale(1);
+		  }
+		}
+	}
+
+	.left-body-content {
+		margin-left: 145px;
+	}
+
+	.content-desc {
+		font-family: $Gilroy;
+		font-size: 20px;
+		line-height: 20px;
+		color: #3a3a3a;
+		margin-top: 8%;
+	}
+
+	.content-title {
+		font-family: $CouriBold;
+		font-size: 22px;
+		margin-top: 77px;
+		color: #3a3a3a;
+		line-height: 22px;
+		padding-right: 18px;
+	}
+
+	.line-title {
+		width: 90px;
+		height: 4px;
+		margin-top: 30px;
+		background-color: #3a3a3a;
+	}
+
+	.calc-title {
+		height: 72px;
+		font-family: $Couri;
+		line-height: 20px;
+		font-size: 20px;
+		color: #3a3a3a;
+
+		span {
+			font-family: $CouriBold;
+		}
+	}
+
+	.calc-item {
+		float: left;
+		height: 135px;
+		width: 215px;
+		padding-left: 18px;
+		margin-top: 50px;
+
+		input {
+			outline: 0;
+			border: none;
+			font-family: $CouriBold;
+			font-size: 80px;
+			color: #9c9c9c;	
+			height: 65px;	
+			width: 100%;
+			text-align: right;
+			float: right;	
+			padding-right: 60px;
+		}	
+
+
+		input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+		  color: #9c9c9c;
+		}
+
+		input::-moz-placeholder { /* Firefox 19+ */
+		  color: #9c9c9c;
+		}
+
+		input:-ms-input-placeholder { /* IE 10+ */
+		  color: #9c9c9c;
+		}
+
+		textarea:-moz-placeholder { /* Firefox 18- */
+		  color: #9c9c9c;
+		}					
+	}
+
+	.calc-item:not(:last-child) {
+		border-right: 1px solid #292929;
+	}
+
+
+	.forms {
+		display: inline-block;
+		width: 100%;
+		margin-top: 65px;
+
+		.input {
+			float: left;
+			border: 1px solid #3a3a3a;		
+			width: 100%;
+			max-width: 405px;
+			margin-top: 30px;
+		}
+
+		.bg {
+			float: left;
+			height: 37px;
+			width: 32px;
+			text-align: center;
+			border-right: 1px solid #000;
+			padding-top: 7px;
+			background-color: #ffe87c;
+
+			span {
+				margin: auto;
+			}
+		}
+
+
+		svg {
+			width: 20px;
+			height: 20px;
+		}
+
+		input[type="text"] {
+			display: inline-block;
+			height: 36px;
+			padding-top: 5px;
+			padding-left: 10px;
+			padding-right: 20px;
+			width: 90%;
+			font-family: $CouriBold;
+			font-size: 12px;
+			color: #3a3a3a;
+			border: none;
+			outline: 0;
+		}	
+
+		input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+		  color: #3a3a3a;
+		}
+
+		input::-moz-placeholder { /* Firefox 19+ */
+		  color: #3a3a3a;
+		}
+
+		input:-ms-input-placeholder { /* IE 10+ */
+		  color: #3a3a3a;
+		}
+
+		input:-moz-placeholder { /* Firefox 18- */
+		  color: #3a3a3a;
+		}	
+
+		textarea {
+			width: 100%;
+			max-width: 405px;
+			height: 55px;
+			padding-left: 40px;
+			padding-top: 10px;
+			border: 1px solid #3a3a3a;
+			outline: 0;
+			resize: none;
+			margin-top: 32px;
+			font-family: $CouriBold;
+		}
+
+		textarea::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+		  color: #3a3a3a;
+		}
+
+		textarea::-moz-placeholder { /* Firefox 19+ */
+		  color: #3a3a3a;
+		}
+
+		textarea:-ms-input-placeholder { /* IE 10+ */
+		  color: #3a3a3a;
+		}
+
+		textarea:-moz-placeholder { /* Firefox 18- */
+		  color: #3a3a3a;
+		}			
+
+	}
+	
+	.input-container {
+		display: inline-block;
+		width: 100%;
+	}
+
+	.inputs.fix {
+		max-width: 627px;
+		margin-top: 25px;
+	}
+
+	.btn_4 {
+		float: left;
+	}
+
+	.politica {
+		cursor: pointer;
+		margin-top: 10px;
+
+		.check {
+			position: relative;
+			display: inline-block;
+			vertical-align: top;
+			width: 25px;
+			height: 25px;
+			border: 1px solid #3a3a3a;
+			background-color: #ffe87c;
+			svg {
+				position: absolute;
+				left: 0;
+				right: 0;
+				top: 1px;
+				max-width: 15px;
+				max-height: 15px;
+				margin: auto;
+				margin-top: 3px;
+				transition: 0.4s;
+
+				.svg-check {
+					fill: #000;
+				}
+			}
+		}
+
+		.check[check="true"] svg {
+			transform: rotate(0deg) scale(1);
+			opacity: 1;
+		}
+
+		.check[check=""] svg,
+		.check[check="false"] svg {
+			transform: rotate(50deg) scale(1.8);
+			opacity: 0;			
+		}
+
+		.check.warning {
+			transition: 0.4s;
+			border-color: red;
+		}
+		
+		.caption {
+			display: inline-block;
+			vertical-align: top;
+			margin-left: 15px;
+			font-family: $CouriBold;
+			font-size: 12px;
+			color: #3a3a3a;
+			line-height: 13px;
+
+			a {
+				color: #3a3a3a;
+				text-decoration: none;
+			}
+		}
+	}
+
+	.btn_4 {
+		margin-top: 30px;
+	}
+}
+
+.right-body {
+	position: fixed;
+	right: 0;
+	width: 50%;
+	height: 100%;
+	float: right;
+	background-color: #ffe87c;
+
+	.caption {
+		position: absolute;
+		right: 162px;
+		top: 58px;
+		font-size: 16px;
+		font-family: $CouriBold;
+		font-style: italic;
+		span {
+			position: relative;
+		}
+
+	}
+
+	.caption span:after {
+		content: "";
+		position: absolute;
+		left: 0;
+		bottom: -5px;
+		display: inline-block;
+		height: 2px;
+		background-color: #3a3a3a;
+		width: 100%;
+	}
+	
+	.contacts {
+		margin-top: 187px;
+		margin-left: 337px;
+
+	}
+
+	.contacts-title {
+		font-family: $CouriBold;
+		font-size: 22px;
+		color: #3a3a3a;
+	}
+
+	.contact {
+		display: inline-block;
+		vertical-align: top;
+		width: 100%;
+		margin-top: 35px;
+	}
+
+	.contact.fix {
+		margin-top: 105px;
+	}
+	.contact-icon {
+		float: left;
+
+		svg {
+			width: 20px;
+		}
+	}
+
+	.contact-value {
+		font-family: $Couri;
+		font-size: 22px;
+		color: #3a3a3a;
+		margin-left: 20px;
+		line-height: 22px;
+		float: left;
+	}
+}
+
+
+.separator-bottom {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	max-width: none;
+}
+
+
+@media screen and (max-width: 620px) and (min-width: 320px)  {
+	.desctop {
+		display: none;
+	}
+	
+	.mobile {
+		display: block;
+	}
+
+	.left-body {	
+
+		.logo {
+			img {
+				margin-top: 12px;
+				max-width: 40px;
+			}
+		}
+
+		.content-title {
+			font-size: 16px;
+			line-height: 18px;
+			margin-top: 80px;
+		}
+
+		.content-desc {
+			font-size: 12px;
+			line-height: 13px;
+			margin-top: 25px;
+		}
+
+		.left-body-content {
+			margin-left: 0;
+		}
+
+		.line {
+			width: 40px;
+			margin-top: 25px;
+		}
+
+		.mobile-bg {
+			height: 315px;
+			margin-left: -15px;
+			margin-right: -15px;
+			@include bg('modile-index-4.jpg');
+			background-size: cover;
+		}
+
+		.top-nav {
+			position: fixed;
+			top: 0;
+			left: 0;			
+			width: 100%;
+			margin-top: 15px;			
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+
+			
+		.calc-item {
+			border-right: none !important;
+			border-bottom: 2px solid #d4d4d4;
+			padding-left: 0;
+			float: none !important;
+			margin: auto;
+			padding-bottom: 30px;
+			margin-top: 20px;
+			
+			input {
+				float: none !important;
+				text-align: center;
+				padding: 0 !important;
+				font-size: 53px;
+				margin-top: -30px;
+			}
+		}
+
+
+		.forms {
+			.input {
+				margin-right: 0;
+				width: 100%;
+				margin-top: 20px;
+			}
+		}
+
+		.btn_4 {
+			float: left;
+			margin-top: 15px;
+			margin-bottom: 15px;
+		}		
+	}
+}
+
+@media screen and (max-width: 1700px) and (min-width: 320px) {
+	body {
+		overflow-y: auto;
+	}
+
+	.separator-bottom {
+		display: none;
+	}
+	
+	.left-body {
+		.left-body-content {
+			margin-left: 15px;
+		}
+
+		.left-nav {
+			display: none;
+		}
+	}
+
+	.right-body {
+		.contacts {
+			margin-left: 15px;
+		}
+
+		.caption {
+			display: none;
+		}
+	}
+}
+
+@media screen and (max-width: 1700px) and (min-width: 1024px) {
+	
+}
+
+@media screen and (max-width: 1700px) and (min-width: 620px) {
+	.left-body {
+		.content {
+			max-width: 420px;
+			margin: auto;
+		}
+	}
+	.right-body {
+		.contacts {
+			max-width: 430px;
+			margin: auto;
+			margin-top: 187px;
+		}
+	}
+
+	.right-body:after {
+		content: "";
+		display: none;
+	}	
+}
+
+@media screen and (max-width: 960px) and (min-width: 320px) {
+	.routes {
+		display: none;
+	}
+
+	.left-body {
+		width: 100%;
+		position: static;
+
+		.forms {
+			margin-top: 10px;
+
+			input[type="text"] {
+				width: 85%;
+			}
+		}
+
+		.politica {
+			.caption {
+				width: 84%;
+				font-size: 10px;
+			}
+		}
+	}
+
+	.right-body {
+		width: 100%;
+		background-color: #FFF;
+		position: static;
+		padding-bottom: 30px;
+
+		.contacts {
+			margin-top: 15px;
+		}
+		
+		.contacts-title {
+			font-size: 16px;
+			line-height: 18px;
+		}
+
+		.contact.fix,
+		.contact {
+			margin-top: 22px;
+		}
+
+		.contact-value {
+			font-size: 12px;
+			line-height: 13px;
+		}
+	}
+}
+@media screen and (max-width: 620px) and (min-width: 320px) {
+	.right-body {
+		.caption {
+			display: none;
+		}
+	}
+}

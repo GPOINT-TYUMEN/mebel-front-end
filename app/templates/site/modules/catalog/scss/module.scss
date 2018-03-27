@@ -1,0 +1,246 @@
+.left-body {
+	width: 65%;
+	height: 100%;
+	position: fixed;
+	background-color: #c6f2e9;
+
+	.left-nav {
+		position: fixed;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 50px;
+		border-right: 2px solid #757575;
+	}
+
+	.social {
+		position: absolute;
+		bottom: 30px;
+		left: 30px;
+		background-color: #c6f2e9;
+		text-align: center;
+		padding: 20px 0;
+
+		a {
+			transition: 0.4s;
+			display: block;
+			text-decoration: none !important;
+		}
+
+		a:not(:first-child) {
+			margin-top: 25px;
+		}
+
+		i {
+			transition: 0.4s;
+			color: #3a3a3a;
+			font-size: 35px;
+		}
+
+		a:hover {	
+			transform: scale(0.9);
+			i {
+				color: #9c9c9c;
+			}
+		}	
+	}
+
+
+	.top-nav {
+		margin-top: 45px;
+		display: inline-block;
+		width: 100%;
+
+		.logo {
+			float: left;
+		}
+
+		.nav {
+			float: left;
+			margin-left: 52px;
+			margin-top: 20px;
+			cursor: pointer;
+		}
+
+		nav:hover {
+			transition: 0.4s;
+			opacity: 0.7;
+		}
+
+		.contact {
+			float: left;
+			margin-left: 30px;
+			margin-top: 20px;
+			animation-iteration-count: infinite;
+			animation-direction: alternate;
+			animation-duration: 2s;
+			animation-name: slidein-contact;
+			a {
+				font-family: $CouriBold;
+				font-size: 16px;
+				color: #3a3a3a;
+				text-decoration: none !important;
+			}
+		}
+
+		.contact.active {
+			transform: scale(1);
+		}
+
+
+		@keyframes slidein-contact {
+		  from {
+			transform: scale(0.9);
+		  }
+
+		  to {
+			transform: scale(1);
+		  }
+		}
+	}
+
+	.left-body-content {
+		margin-left: 145px;
+	}
+
+	.content-title {
+		font-family: $CouriBold;
+		font-size: 40px;
+		margin-top: 79px;
+		color: #3a3a3a;
+		line-height: 40px;
+		span {
+			display: inline-block;
+			width: 100%;
+			font-family: $Gilroy;
+			font-size: 40px;
+		}
+	}
+
+	.line {
+		margin-top: 55px;
+		width: 85px;
+		height: 2px;
+		background-color: #3a3a3a;
+	}
+
+	.content-desc {
+		font-family: $Gilroy;
+		font-size: 20px;
+		line-height: 20px;
+		color: #3a3a3a;
+		margin-top: 8%;
+
+		strong {
+			font-family: $GilroySemiBold;
+		}
+	}
+}
+
+.catalog {
+	margin-top: 60px;
+	.item {
+		vertical-align: top;
+		display: inline-block;
+		width: 278px;
+		height: 278px;
+		border: 1px solid #000;
+		background-color: #ffe87c;
+		margin-right: 45px;
+	}
+	
+	.item-data {
+		padding-top: 30px;
+		padding-left: 45px;
+	}
+
+	.item-bg {
+		height: 135px;
+		width: 100%;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+
+	.item-title {
+		color: #000;
+		font-family: $CouriBold;
+		font-size: 16px;
+	}
+
+	.item-line {
+		background-color: #000;
+		height: 1px;
+		width: 38px;
+		margin-top: 18px;
+	}
+
+	.item-desc {
+		margin-top: 20px;
+		color: #000;
+		font-family: $Couri;
+		font-size: 16px;
+	}
+}
+
+@media screen and (max-width: 1024px) and (min-width: 320px)  {
+	.left-body {
+		width: 100%;		
+		.left-nav {
+			display: none;
+		}
+	}
+}
+
+@media screen and (max-width: 1024px) and (min-width: 620px)  {
+
+}
+
+@media screen and (max-width: 620px) and (min-width: 320px)  {
+
+}
+
+.right-body {
+	position: fixed;
+	right: 0;
+	width: 35%;
+	height: 100%;
+	float: right;
+
+	.caption {
+		position: absolute;
+		right: 162px;
+		top: 58px;
+		font-size: 16px;
+		font-family: $CouriBold;
+		font-style: italic;
+		span {
+			position: relative;
+		}
+
+	}
+
+
+	.caption span:after {
+		content: "";
+		position: absolute;
+		left: 0;
+		bottom: -5px;
+		display: inline-block;
+		height: 2px;
+		background-color: #3a3a3a;
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 1024px) and (min-width: 320px) {
+
+}
+
+@media screen and (max-width: 1024px) and (min-width: 620px) {
+
+}
+
+@media screen and (max-width: 620px) and (min-width: 320px) {
+
+}

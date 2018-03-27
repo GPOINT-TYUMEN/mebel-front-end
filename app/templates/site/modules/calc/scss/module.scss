@@ -1,0 +1,522 @@
+.left-body {
+	width: 50%;
+
+	.left-nav {
+		position: fixed;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 50px;
+		border-right: 2px solid #757575;
+	}
+
+	.social {
+		position: absolute;
+		bottom: 30px;
+		left: 30px;
+		background-color: #FFF;
+		text-align: center;
+		padding: 20px 0;
+
+		a {
+			transition: 0.4s;
+			display: block;
+			text-decoration: none !important;
+		}
+
+		a:not(:first-child) {
+			margin-top: 25px;
+		}
+
+		i {
+			transition: 0.4s;
+			color: #3a3a3a;
+			font-size: 35px;
+		}
+
+		a:hover {	
+			transform: scale(0.9);
+			i {
+				color: #9c9c9c;
+			}
+		}	
+	}
+
+
+	.top-nav {
+		margin-top: 45px;
+		display: inline-block;
+		width: 100%;
+
+		.logo {
+			float: left;
+		}
+
+		.nav {
+			float: left;
+			margin-left: 52px;
+			margin-top: 20px;
+			cursor: pointer;
+		}
+
+		nav:hover {
+			transition: 0.4s;
+			opacity: 0.7;
+		}
+
+		.contact {
+			float: left;
+			margin-left: 30px;
+			margin-top: 20px;
+			animation-iteration-count: infinite;
+			animation-direction: alternate;
+			animation-duration: 1.5s;
+			animation-name: slidein-contact;
+			a {
+				font-family: $CouriBold;
+				font-size: 16px;
+				color: #3a3a3a;
+				text-decoration: none !important;
+			}
+		}
+
+		.contact.active {
+			transform: scale(1);
+		}
+
+
+		@keyframes slidein-contact {
+		  from {
+			transform: scale(0.9);
+		  }
+
+		  to {
+			transform: scale(1);
+		  }
+		}
+	}
+
+	.left-body-content {
+		margin-left: 145px;
+	}
+
+	.content-desc {
+		font-family: $Gilroy;
+		font-size: 20px;
+		line-height: 20px;
+		color: #3a3a3a;
+		margin-top: 8%;
+	}
+
+	.content-title {
+		font-family: $CouriBold;
+		font-size: 22px;
+		margin-top: 30px;
+		color: #3a3a3a;
+		line-height: 22px;
+		padding-right: 18px;
+	}
+
+	.line-title {
+		width: 90px;
+		height: 4px;
+		margin-top: 30px;
+		background-color: #3a3a3a;
+	}
+
+	.calc-title {
+		height: 72px;
+		font-family: $Couri;
+		line-height: 20px;
+		font-size: 20px;
+		color: #3a3a3a;
+
+		span {
+			font-family: $CouriBold;
+		}
+	}
+
+	.calc-item {
+		float: left;
+		height: 135px;
+		width: 215px;
+		padding-left: 18px;
+		margin-top: 50px;
+
+		input {
+			outline: 0;
+			border: none;
+			font-family: $CouriBold;
+			font-size: 80px;
+			color: #9c9c9c;	
+			height: 65px;	
+			width: 100%;
+			text-align: right;
+			float: right;	
+			padding-right: 60px;
+		}	
+
+
+		input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+		  color: #9c9c9c;
+		}
+
+		input::-moz-placeholder { /* Firefox 19+ */
+		  color: #9c9c9c;
+		}
+
+		input:-ms-input-placeholder { /* IE 10+ */
+		  color: #9c9c9c;
+		}
+
+		input:-moz-placeholder { /* Firefox 18- */
+		  color: #9c9c9c;
+		}			
+	}
+
+	.calc-item:not(:last-child) {
+		border-right: 1px solid #292929;
+	}
+
+
+	.forms {
+		display: inline-block;
+		width: 100%;
+		margin-top: 65px;
+
+		.input {
+			float: left;
+			border: 1px solid #3a3a3a;		
+			margin-right: 15px;	
+		}
+
+		.bg {
+			float: left;
+			height: 37px;
+			width: 32px;
+			text-align: center;
+			border-right: 1px solid #000;
+			padding-top: 7px;
+			background-color: #ffe87c;
+
+			span {
+				margin: auto;
+			}
+		}
+
+
+		svg {
+			width: 20px;
+			height: 20px;
+		}
+
+		input[type="text"] {
+			display: inline-block;
+			height: 36px;
+			padding-top: 5px;
+			padding-left: 10px;
+			padding-right: 20px;
+			width: 165px;
+			font-family: $CouriBold;
+			font-size: 12px;
+			color: #3a3a3a;
+			border: none;
+			outline: 0;
+		}	
+
+		input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+		  color: #3a3a3a;
+		}
+
+		input::-moz-placeholder { /* Firefox 19+ */
+		  color: #3a3a3a;
+		}
+
+		input:-ms-input-placeholder { /* IE 10+ */
+		  color: #3a3a3a;
+		}
+
+		input:-moz-placeholder { /* Firefox 18- */
+		  color: #3a3a3a;
+		}	
+
+		textarea {
+			width: 100%;
+			max-width: 627px;
+			height: 145px;
+			padding-left: 40px;
+			padding-top: 10px;
+			border: 1px solid #3a3a3a;
+			outline: 0;
+			resize: none;
+			margin-top: 32px;
+		}
+
+	}
+
+	.inputs.fix {
+		max-width: 627px;
+		margin-top: 25px;
+	}
+
+	.btn_load-file {
+		height: 39px;
+		width: 460px;
+		border: 1px solid #3a3a3a;
+		overflow: hidden;
+		font-family: $CouriBold;
+		font-size: 12px;	
+		text-align: center;	
+		cursor: pointer;
+		float: left;
+	}
+
+	.load-file-caption {
+		height: inherit;
+		width: 335px;
+		background-color: #ffe87c;	
+		border-right: 1px solid #3a3a3a;
+		float: left;	
+		padding-top: 10px;
+	}
+
+	.load-file-name {
+		float: right;
+		width: 115px;
+		padding-top: 10px;
+	}
+
+	.btn_4 {
+		float: right;
+	}
+}
+
+.right-body {
+	position: fixed;
+	right: 0;
+	width: 50%;
+	height: 100%;
+	float: right;
+	@include bg('calc-bg.jpg');
+	background-size: cover;
+
+	.caption {
+		position: absolute;
+		right: 162px;
+		top: 58px;
+		font-size: 16px;
+		font-family: $CouriBold;
+		font-style: italic;
+		span {
+			position: relative;
+		}
+
+	}
+
+
+	.caption span:after {
+		content: "";
+		position: absolute;
+		left: 0;
+		bottom: -5px;
+		display: inline-block;
+		height: 2px;
+		background-color: #3a3a3a;
+		width: 100%;
+	}
+
+
+}
+
+
+.mobile {
+	display: none;
+}
+
+@media screen and (max-width: 1700px) and (min-width: 320px)  {
+	.left-body {
+
+		.calc-item {
+			input {
+				background-color: rgba(156, 156, 156, 0);
+			}
+		}
+
+		width: 100%;		
+		.left-nav {
+			display: none;
+		}
+	}
+}
+
+@media screen and (max-width: 1700px) and (min-width: 620px)  {
+	.left-body {
+		height: 100%;
+
+
+		.left-body-content {
+			margin-left: 35px;
+		}
+
+		.content {
+		    max-width: 660px;
+		    margin: auto;			
+		}
+	}
+}
+
+@media screen and (max-width: 620px) and (min-width: 320px)  {
+	.desctop {
+		display: none;
+	}
+	
+	.mobile {
+		display: block;
+	}
+
+}
+
+@media screen and (max-width: 1700px) and (min-width: 320px) {
+	.right-body {
+		width: 100%;
+	}
+
+
+	.left-body {	
+
+		.logo {
+			img {
+				margin-top: 12px;
+				max-width: 40px;
+			}
+		}
+
+		.content-title {
+			font-size: 20px;
+			margin-top: 30px;
+		}
+
+		.content-desc {
+			font-size: 12px;
+			line-height: 13px;
+			margin-top: 25px;
+		}
+
+		.left-body-content {
+			margin-left: 0;
+		}
+
+		.line {
+			width: 40px;
+			margin-top: 25px;
+		}
+
+		.mobile-bg {
+			height: 315px;
+			margin-left: -15px;
+			margin-right: -15px;
+			@include bg('modile-index-4.jpg');
+			background-size: cover;
+		}
+
+		.top-nav {
+			position: fixed;
+			top: 0;
+			left: 0;			
+			width: 100%;
+			margin-top: 15px;			
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+
+			
+		.calc-item {
+			border-right: none !important;
+			border-bottom: 2px solid #d4d4d4;
+			padding-left: 0;
+			float: none !important;
+			margin: auto;
+			padding-bottom: 30px;
+			margin-top: 20px;
+			
+			input {
+				float: none !important;
+				text-align: center;
+				padding: 0 !important;
+				font-size: 53px;
+				margin-top: -30px;
+			}
+		}
+
+		.calc-title {
+			font-size: 16px;
+			float: left;
+		}
+
+		.line-title {
+			display: none;
+		}
+		
+		.btn_load-file {
+			width: 100%;
+		}
+	
+		.load-file-name {
+			width: 50%;
+		}
+
+		.forms {
+			.input {
+				margin-right: 0;
+				width: 100%;
+				margin-top: 20px;
+			}
+		}
+
+		.load-file-caption {
+			width: 50%;
+			padding-top: 4px;
+		}
+
+
+		.btn_4 {
+			float: left;
+			margin-top: 15px;
+			margin-bottom: 15px;
+		}		
+	}	
+}
+
+@media screen and (max-width: 1700px) and (min-width: 620px) {
+	.right-body {
+		width: 100%;
+
+		.caption {
+			z-index: 100;
+			right: 62px;
+		}
+	}
+
+	.right-body:after {
+		content: "";
+		display: inline-block;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		background-color: rgba(255, 255, 255, 0.60);
+	}	
+}
+
+@media screen and (max-width: 1700px) and (min-width: 320px) {
+	body {
+		overflow-y: auto;
+	}
+
+	.right-body {
+		display: none;
+
+		.caption {
+			display: none;
+		}
+	}
+}

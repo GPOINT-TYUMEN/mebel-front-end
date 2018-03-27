@@ -1,0 +1,372 @@
+.left-body {
+	width: 50%;
+	height: 100%;
+	position: fixed;
+	background-color: #c6f2e9;
+
+	.left-nav {
+		position: fixed;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 50px;
+		border-right: 2px solid #757575;
+	}
+
+	.social {
+		position: absolute;
+		bottom: 30px;
+		left: 30px;
+		background-color: #c6f2e9;
+		text-align: center;
+		padding: 20px 0;
+
+		a {
+			transition: 0.4s;
+			display: block;
+			text-decoration: none !important;
+		}
+
+		a:not(:first-child) {
+			margin-top: 25px;
+		}
+
+		i {
+			transition: 0.4s;
+			color: #3a3a3a;
+			font-size: 35px;
+		}
+
+		a:hover {	
+			transform: scale(0.9);
+			i {
+				color: #9c9c9c;
+			}
+		}	
+	}
+
+
+	.top-nav {
+		margin-top: 45px;
+		display: inline-block;
+		width: 100%;
+
+		.logo {
+			float: left;
+		}
+
+		.nav {
+			float: left;
+			margin-left: 52px;
+			margin-top: 20px;
+			cursor: pointer;
+		}
+
+		nav:hover {
+			transition: 0.4s;
+			opacity: 0.7;
+		}
+
+		.contact {
+			float: left;
+			margin-left: 30px;
+			margin-top: 20px;
+			animation-iteration-count: infinite;
+			animation-direction: alternate;
+			animation-duration: 2s;
+			animation-name: slidein-contact;
+			a {
+				font-family: $CouriBold;
+				font-size: 16px;
+				color: #3a3a3a;
+				text-decoration: none !important;
+			}
+		}
+
+		.contact.active {
+			transform: scale(1);
+		}
+	}
+
+	@keyframes slidein-contact {
+	  from {
+		transform: scale(0.9);
+	  }
+
+	  to {
+		transform: scale(1);
+	  }
+	}
+
+	.left-body-content {
+		margin-left: 145px;
+	}
+
+	.content-title {
+		font-family: $CouriBold;
+		font-size: 40px;
+		margin-top: 190px;
+		color: #3a3a3a;
+		line-height: 40px;
+		span {
+			display: inline-block;
+			width: 100%;
+			font-family: $Gilroy;
+			font-size: 40px;
+		}
+	}
+
+	.line {
+		margin-top: 45px;
+		width: 85px;
+		height: 2px;
+		background-color: #3a3a3a;
+	}
+}
+
+.right-body {
+	position: fixed;
+	right: 0;
+	width: 50%;
+	height: 100%;
+	float: right;
+	background-size: cover;
+
+	.caption {
+		position: absolute;
+		right: 162px;
+		top: 58px;
+		font-size: 16px;
+		font-family: $CouriBold;
+		font-style: italic;
+		span {
+			position: relative;
+		}
+
+	}
+
+	.caption span:after {
+		content: "";
+		position: absolute;
+		left: 0;
+		bottom: -5px;
+		display: inline-block;
+		height: 2px;
+		background-color: #3a3a3a;
+		width: 100%;
+	}
+
+	.gift {
+		max-width: none;
+		position: absolute;
+		left: -241px;
+		top: 175px;		
+	}
+
+	.advantages-wrapper {
+		text-align: justify;
+		max-width: 495px;
+		float: right;
+		margin-top: 220px;
+		margin-right: 115px;
+	}
+
+	.advantages-wrapper:after {
+		content: "";
+		display: inline-block;
+		width: 100%;
+	}
+
+	.advantage {
+		width: 100%;
+		max-width: 190px;
+		text-align: left;
+		display: inline-block;
+		vertical-align: top;
+		margin-top: 60px;
+
+		.line {
+			width: 85px;
+			height: 2px;
+			background-color: #3a3a3a;
+		}
+	}
+
+	.advantage-title {
+		font-family: $CouriBold;
+		font-size: 30px;
+		color: #3a3a3a;
+		line-height: 28px;
+	}
+
+	.advantage-desc {
+		font-family: $Gilroy;
+		font-size: 15px;
+		color: #3a3a3a;		
+		margin-top: 23px;
+		min-height: 110px;
+
+		span {
+			font-family: $GilroyBold;
+		}
+	}
+}
+
+.mobile-content {
+	display: none;
+}
+
+.action {
+	background-color: #c6f2e9;
+	display: inline-block;
+	width: 100%;
+	height: 100px;
+	position: relative;	
+}
+
+.action-title {
+	font-family: $CouriBold;
+	color: #3a3a3a;
+	font-size: 15px;
+	padding-left: 15px;
+	margin-top: 15px;
+	line-height: 15px;
+}
+
+.action-bg {
+	position: absolute;
+	top: -20px;
+	right: 0;
+
+	img {
+		max-width: 118px;
+	}
+}
+
+
+@media screen and (max-width: 1480px) and (min-width: 320px)  {
+	body {
+		overflow-y: auto;
+	}
+}
+
+
+
+@media screen and (max-width: 1700px) and (min-width: 320px) {
+	.left-body {
+		position: static;
+		width: 100%;
+		background-color: #FFF;
+		.left-nav {
+			display: none;
+		}		
+	}
+
+	.right-body {
+		position: static;
+		width: 100%;
+	}
+
+	.routes {
+		position: static;
+		float: right;
+	}
+}
+
+@media screen and (max-width: 1700px) and (min-width: 1024px) {
+	.right-body {
+		padding-left: 15px;
+		padding-bottom: 30px;
+	}
+
+	.action {
+		height: 175px;
+	}
+
+	.action-title {
+		font-size: 33px;
+		line-height: 35px;
+	}
+	.action-bg {
+		top: -57px;
+		right: 28px;
+		img {
+			max-width: 245px;
+		}
+	}
+}
+
+
+@media screen and (max-width: 1700px) and (min-width: 620px) {
+	.left-body {
+		padding-bottom: 30px;
+		.content-title {
+			margin-top: 105px;
+		}
+
+		.left-body-content {
+			margin-left: 0;
+		}		
+	}
+
+	.right-body {
+		.advantage {
+			max-width: 38%;
+
+			.line {
+				display: none;
+			}
+
+		}
+
+		.advantages-wrapper {
+			padding-left: 0;
+			max-width: 100%;
+			width: 100%;
+			padding-right: 65px;
+			float: left;
+			margin-top: 0;
+		}
+	}
+}
+
+@media screen and (max-width: 620px) and (min-width: 320px) {
+	.left-body {
+		.left-body-content {
+			margin-left: 0;
+		}
+	}
+
+	.right-body {
+		.advantages-wrapper {
+			margin-top: 0;
+			margin-right: 0;
+		}
+
+		.advantage {
+			max-width: 49%;
+			.line {
+				display: none;	
+			}
+		}
+
+		.advantage-title {
+			font-size: 13px;
+		}
+
+		.advantage-desc {
+			font-size: 10px;
+			margin-top: 10px;
+			min-height: 60px;
+		}
+	}
+
+	.action-bg {
+		right: 18px;
+	}
+
+	.routes {
+		display: none;
+	}
+}
+
